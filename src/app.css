@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: lofi --default;
+}
+
+@layer components {
+    h1 {
+        font-size: var(--text-2xl);
+        font-weight: var(--font-weight-semibold);
+    }
+
+    button {
+        min-width: 96px;
+    }
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    height: 100vh;            /* full viewport height */
+}
+
+
+
+
