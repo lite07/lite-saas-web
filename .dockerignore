@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.svelte-kit
+build
+.DS_Store
+*.md
+.vscode
+.idea
+dist
+coverage
