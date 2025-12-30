@@ -1,22 +1,20 @@
 <script>
-    import { goto } from "$app/navigation";
-    import Navbar from "../components/navbar.svelte";
+  import { goto } from "$app/navigation";
 
-    function clickLogin(){
-        goto("/sign-in")
-    }
+  function clickLogin() {
+    goto("/sign-in");
+  }
 </script>
 
-<Navbar />
+<div class="h-screen grid place-items-center bg-base-100">
+  <div class="text-center space-y-6">
+    <h1 class="text-4xl font-bold">Welcome!</h1>
 
-<div class="center-content" style="flex-direction: column;">
-    <h1 class="text-[36px]" >Welcome!</h1>
-
-    <button class="btn btn-primary w-24 py-[12px] mt-8" on:click={clickLogin}> Login </button>
+    <button
+      class="btn btn-primary w-28"
+      on:click={clickLogin}
+    >
+      Login
+    </button>
+  </div>
 </div>
-
-
-
-
-
-

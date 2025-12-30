@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-    themes: lofi --default;
+    themes: corporate --default;
 }
 
 @layer components {
