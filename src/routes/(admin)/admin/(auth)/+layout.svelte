@@ -14,9 +14,23 @@
     </nav>
   </aside>
 
-  <!-- Main content -->
-  <main class="flex-1 px-6 py-20">
-    <slot />
-  </main>
+  <!-- Main area -->
+  <div class="flex-1 flex flex-col">
+
+    <!-- Top bar -->
+    <header class="h-16 border-b border-base-300 px-6 flex items-center justify-end">
+      <form method="POST" action="/logout">
+        <button class="btn btn-sm btn-outline">
+          Logout
+        </button>
+      </form>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-1 px-6 py-6">
+      <slot />
+    </main>
+
+  </div>
 
 </div>
